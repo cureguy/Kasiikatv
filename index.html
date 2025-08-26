@@ -3,62 +3,123 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kassika TV</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Kassika TV - Youth News</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #111;
+      color: #fff;
+    }
+    header {
+      background: #000;
+      color: #e50914;
+      padding: 1rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    nav {
+      background: #e50914;
+      padding: 0.8rem;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    .hero {
+      position: relative;
+      text-align: center;
+      color: white;
+    }
+    .hero img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+    .hero-text {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      background: rgba(0,0,0,0.6);
+      padding: 15px;
+      border-radius: 5px;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .card {
+      background: #222;
+      padding: 15px;
+      border-radius: 8px;
+    }
+    .card img {
+      width: 100%;
+      border-radius: 5px;
+    }
+    .card h3 {
+      color: #e50914;
+    }
+    footer {
+      background: #000;
+      color: #e50914;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
 </head>
-<body class="bg-white text-gray-900 font-sans">
+<body>
+  <header>
+    <h1>Kassika TV 🖤❤️</h1>
+    <p>Teen Newspaper & Youth Empowerment</p>
+  </header>
 
-  <!-- Hero Section -->
-  <section class="bg-gradient-to-r from-orange-600 to-orange-400 text-white py-20 text-center">
-    <h1 class="text-5xl font-bold mb-4">Kassika TV</h1>
-    <p class="text-lg mb-6">Teen Newspaper & Youth Empowerment Body – Made by youth, for youth.</p>
-    <a href="https://instagram.com/kassika" target="_blank"
-       class="bg-white text-orange-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-200">
-      Join Us
-    </a>
-  </section>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">News</a>
+    <a href="#">Lifestyle</a>
+    <a href="#">Projects</a>
+    <a href="#">Contact</a>
+  </nav>
 
-  <!-- Features Section -->
-  <section class="py-16 px-6 max-w-6xl mx-auto">
-    <h2 class="text-3xl font-bold text-center mb-12">What We Do</h2>
-    <div class="grid md:grid-cols-3 gap-8 text-center">
-      <div class="p-6 border rounded-lg shadow hover:shadow-lg">
-        <h3 class="text-xl font-semibold mb-3">Teen Newspaper</h3>
-        <p>Sharing stories, news, and voices from the youth, by the youth.</p>
-      </div>
-      <div class="p-6 border rounded-lg shadow hover:shadow-lg">
-        <h3 class="text-xl font-semibold mb-3">Youth Empowerment</h3>
-        <p>Creating opportunities for teens to grow, learn, and lead.</p>
-      </div>
-      <div class="p-6 border rounded-lg shadow hover:shadow-lg">
-        <h3 class="text-xl font-semibold mb-3">Creative Voices</h3>
-        <p>A platform for music, art, writing, and ideas from young people.</p>
-      </div>
+  <section class="hero">
+    <img src="https://images.pexels.com/photos/1181592/pexels-photo-1181592.jpeg" alt="Breaking News">
+    <div class="hero-text">
+      <h2>Breaking News Headline</h2>
+      <p>Quick intro about the story. <a href="#" style="color:#e50914;">Read more</a></p>
     </div>
   </section>
 
-  <!-- Gallery / Blog Section -->
-  <section class="bg-gray-100 py-16 px-6">
-    <h2 class="text-3xl font-bold text-center mb-12">Our Stories</h2>
-    <div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-      <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" alt="Story" class="rounded-lg shadow" />
-      <img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70" alt="Event" class="rounded-lg shadow" />
-      <img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7" alt="Youth Project" class="rounded-lg shadow" />
+  <section class="container">
+    <div class="card">
+      <img src="https://images.pexels.com/photos/1181605/pexels-photo-1181605.jpeg" alt="Story">
+      <h3>Story Title 1</h3>
+      <p>Snippet of the news story goes here... <a href="#" style="color:#e50914;">Read more</a></p>
+    </div>
+    <div class="card">
+      <img src="https://images.pexels.com/photos/1462632/pexels-photo-1462632.jpeg" alt="Story">
+      <h3>Story Title 2</h3>
+      <p>Snippet of the news story goes here... <a href="#" style="color:#e50914;">Read more</a></p>
+    </div>
+    <div class="card">
+      <img src="https://images.pexels.com/photos/2833037/pexels-photo-2833037.jpeg" alt="Story">
+      <h3>Story Title 3</h3>
+      <p>Snippet of the news story goes here... <a href="#" style="color:#e50914;">Read more</a></p>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section class="py-16 px-6 max-w-4xl mx-auto text-center">
-    <h2 class="text-3xl font-bold mb-8">Get in Touch</h2>
-    <p class="mb-4">📧 <a href="mailto:kasiika@gmail.com" class="text-orange-600">kasiika@gmail.com</a></p>
-    <p class="mb-4">📞 <a href="tel:0779809846" class="text-orange-600">0779809846</a></p>
-    <p>📷 <a href="https://instagram.com/kassika" target="_blank" class="text-orange-600">@kassika</a></p>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-orange-600 text-white text-center py-6">
-    <p>© 2025 Kassika TV – Made by youth, for youth.</p>
+  <footer>
+    <p>© 2025 Kassika TV — Youth, Power, and Voice 🖤❤️</p>
   </footer>
-
 </body>
 </html>
